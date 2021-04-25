@@ -3,11 +3,14 @@ TypeScript
 # Conceitos de TypeScript
 ### Types annotations
 - Tipando conceitos generalistas
-- Conceito de tuples( quando desejo que alguma variavel não ocorra a mudança e tipo,apenas valor)
 - Aprofundando nas tipagnes de arrays,objetos e funções
 - Usando propriedades readonly(não permite alterações)
-- Aplicando conceito de variaveis null e undefined(normalmente so vamos trabalhar com null e trata-los)
-- Aplicando tipagem never(nunca retorna nada
+- Aplicando conceito de variaveis null e undefined .Normalmente so vamos trabalhar com null e trata-los para não gerar erros
+- Aplicando tipagem never. Nunca vai retornar nada,diferente de void
+
+### Tuples
+- Caso desejo que algum array ou objeto  não ocorra a mudança de tipo,apenas valores e bastante util.
+- Para tuples ficar tipamente tipada reandoly e uma otima propriedade 
 
 ### Enum
 - Entendo o funcionamento do enum para TypeScript e apliquei alguns conceitos.
