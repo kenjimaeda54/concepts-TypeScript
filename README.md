@@ -7,6 +7,7 @@ TypeScript
 - Usando propriedades readonly(não permite alterações)
 - Aplicando conceito de variaveis null e undefined .Normalmente so vamos trabalhar com null e trata-los para não gerar erros
 - Aplicando tipagem never. Nunca vai retornar nada,diferente de void
+- Usando type unknown  a nosso favor
 
 ### Tuples
 - Caso desejo que algum array ou objeto  não ocorra a mudança de tipo,apenas valores e bastante util.
@@ -15,4 +16,11 @@ TypeScript
 ### Enum
 - Entendo o funcionamento do enum para TypeScript e apliquei alguns conceitos.
 - Trabalha com ideia de objetos , usando conceito diferente do tradicional o java script
+
+### Tipos literais
+- Entendo o conceito do tipos literal em Typescript
+- Aplicando tecnicas de inserção,para determinar um tipo especifico a uma variavel
+
+### Union types
+- Aplicando conceitos de union types é fazer verificaçã da maneira correta
 
