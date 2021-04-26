@@ -27,3 +27,6 @@ TypeScript
 ### Tipos Alias
 - Conceito do tipo alias,muito importante para manutenção e enxergar nosso codigo
 - Crio minhas proprias variaves
+
+### Intersection types
+- Principio parecido ao Union types,porém objetivo e similar ao and no controle de fluxo.
