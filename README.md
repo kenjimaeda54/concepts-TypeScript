@@ -24,3 +24,6 @@ TypeScript
 ### Union types
 - Aplicando conceitos de union types é fazer verificaçã da maneira correta
 
+### Tipos Alias
+- Conceito do tipo alias,muito importante para manutenção e enxergar nosso codigo
+- Crio minhas proprias variaves
