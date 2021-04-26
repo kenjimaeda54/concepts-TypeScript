@@ -30,7 +30,7 @@ console.log(strings.roxo);
 
 //fazendo uma pequena aplicação com função para saber selecionada.
 check(31)
-function check(x: cores): void{
+export function check(x: cores): void{
     if( x > 3  && x < 30 && x >33){
         console.log("Não existe essa cor,selecione abaixo de 3 ou acima de 30 ate 32")
         return;
