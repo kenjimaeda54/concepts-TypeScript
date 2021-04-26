@@ -9,10 +9,9 @@ export const people={
 //exemplo de inserção de valores bastante uteis.
 //dessa forma garanto por inserção que o tipo da variavel cor é vermlho,
 //azul ou amarelo
-export function changeColor(cor: 'Vermelho' | 'Azul' | 'Amarelo'):string{
-
-    return cor;
-
+export function changeColor(cor: 'Vermelho' | 'Azul' | "Amarelo" ):string{
+    return cor
 }
-const change = changeColor('Vermelho');
-console.log(change)
+
+const color = changeColor('Amarelo');
+console.log(color)
