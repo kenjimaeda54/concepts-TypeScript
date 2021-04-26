@@ -3,31 +3,28 @@
 
 type Numbers = number;
 
-type Cor1 = "amarelo" | "vermelho" | "azul";
-type Cor2 = "cinza" | "roxo" | "vermelho";
-
-type CorFavorite =  Cor1 | Cor2;
+type cor1 = "aramelo" | "vermelho" | "azul"
+type cor2 = "cinza" | "vermelho" | "preto"
+type CorFavorite = cor1 | cor2
 
 type People ={
-    name: string;
-    idade: Numbers;
-    cor?:CorFavorite;
-    salario: number;
+    name: string,
+    idade: Numbers,
+    corFavorite?:string,
+    salario:number
 }
 
-export const people:People ={
-
+export const people:People = {
      name:"Luiz",
-     idade:20,
-     salario:12200,
+     idade:30,
+     salario:1200,
 
 }
 
-export function all (people:People, cor:CorFavorite ):People{
-    return  {...people,cor}
-
+export function all (people:People, cor:CorFavorite): People{
+    return {...people,corFavorite:cor}
 }
 
-console.log(all(people,'vermelho'))
+console.log(all(people,'azul'))
 
 
