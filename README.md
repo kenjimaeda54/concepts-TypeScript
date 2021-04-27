@@ -9,7 +9,7 @@ TypeScript
 - Aplicando tipagem never. Nunca vai retornar nada,diferente de void
 - Usando type unknown  a nosso favor
 - Type Script trabalha com tipagem estrutural,algo que não ocorre normalmente em linguagens tipadas ou seja
-se você declarar uma constante objeto,so por inferencia ele vai interpretar o tipo.
+se você declarar uma função com as variaveis ,so por inferencia ele vai interpretar o tipo.
 
 ### Tuples
 - Caso desejo que algum array ou objeto  não ocorra a mudança de tipo,apenas valores e bastante util.
