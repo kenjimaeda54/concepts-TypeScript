@@ -9,17 +9,17 @@ type Results = Ab & Ac;
 // se passar o mause na variavel check seu valor é apenas AC
 
 type Name = {name:string};
-type SecondName =  {secondName:string};
 type Old = {old:number};
-
-type People = Name & SecondName & Old;
+type SecondName = {secondName:string};
+type People = Name & Old & SecondName;
 // se eu utiliza-se o  union types ao inves de intersection types,
 // typeScript não iria obrigar os campos no objeto people
 
 export const people:People ={
-     name:'Pereira',
-     secondName:"Luiz",
-     old:25
+      name:"Luiz",
+      secondName:"Cardosso",
+      old:25,
 }
+
 console.table(people)
 
