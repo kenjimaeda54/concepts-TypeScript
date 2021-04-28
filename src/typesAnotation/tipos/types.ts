@@ -1,4 +1,4 @@
-//numeros
+//variaveis primitivas
 let nome: string = "Beatriz";
 let numbers: number = 1;
 let adult: boolean = true;
