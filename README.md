@@ -1,7 +1,7 @@
 # Conceitos-TypeScript
 TypeScript
 # Conceitos de TypeScript
-### Types annotations
+# Types annotations
 - Tipando conceitos generalistas
 - Aprofundando nas tipagnes de arrays,objetos e funções
 - Usando propriedades readonly(não permite alterações)
