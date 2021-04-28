@@ -2,7 +2,7 @@
 TypeScript
 # Conceitos de TypeScript
 # Types annotations
-- Tipando conceitos generalistas
+- Tipando variaveis primitivas
 - Aprofundando nas tipagnes de arrays,objetos e funções
 - Usando propriedades readonly(não permite alterações)
 - Aplicando conceito de variaveis null e undefined .Normalmente so vamos trabalhar com null e trata-los para não gerar erros
