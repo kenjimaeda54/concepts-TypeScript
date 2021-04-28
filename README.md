@@ -32,3 +32,7 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 
 ### Intersection types
 - Principio parecido ao Union types,porém objetivo e similar ao and no controle de fluxo.
+
+# POO
+- Primeiras classes em Type Script
+- Construindo classes com modificadores de acesso public,private,proteced
