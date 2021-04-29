@@ -43,7 +43,8 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 - Principio de abstração. Para o funcionamento do meu progama asbtraio de uma classe apenas oque é util.
 - Exemplo classico de abstração: Quando ser humano doa sangue,enfermeira abstraia apenas oque é util é não todos os orgãos.
 - Prinicipio do encapsulamento. Eu protejo os dados sensiveis
-- Exemplo classico é o controle remoto,usuario não tem acesso aos componentes internos
+- Exemplo classico é o controle remoto,usuario não tem acesso aos componentes internos.
+- Usando getter e setter na classe Type Script
 
 ### Herança
 - Trabalhando com conceitos de herança,encapsulamento,abstração
