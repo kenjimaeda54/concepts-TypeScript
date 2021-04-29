@@ -19,12 +19,23 @@ export class People {
   }
 }
 
-//isto é herança. Neste caso estamos herdando de classe concreta
-//polimorfismo //duas classes do mesmo tipo implementam metodos de forma diferente
+//Aplicando conceito de super class.
+//Utilizo subclasse para pegar os valores da super classe(classe partn,classe base)
 export class Student extends People {
-  //aqui reflete polimorfismo
+  constructor(
+    name: string,
+    secondName: string,
+    old: number,
+    cpf: string,
+    public room: number,
+  ) {
+    super(name, secondName, old, cpf);
+  }
+
   getName(): string {
-    return `Nome do estudante:${this.name} Sobrenome:${this.secondNmae}`;
+    console.log('Fazendo alguma coisa');
+    const results = super.getName();
+    return `${results} heyyyy`;
   }
 }
 
@@ -39,9 +50,9 @@ export class Client extends People {
 // estou recebendo tudo da classe People
 const people1 = new People('Luiz', 'Miranda', 25, '51516-5');
 
-//por ser tratar de herança herdada de classe concreta,consigo acessar
-//tudo em new student, new Client.
-const people2 = new Student('Rafael', 'Kink', 20, '551516-5');
+///people2 esta com valor mais no campo,em relação aos outros
+//porque foi determinado na classe Studente
+const people2 = new Student('Rafael', 'Kink', 20, '551516-5', 55);
 const people3 = new Client('Beatriz', 'Miranda', 32, '52126-5');
 console.log(people1.getName());
 console.log(people2.getName());
