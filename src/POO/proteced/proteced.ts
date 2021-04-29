@@ -1,7 +1,9 @@
-//criando classe
+//public --- posso acessar em qualquer lugar
+//private-- - posso acesssar somente na classe que foi criado
+//proteced--- posso aacessar na classe que foi criado e sub classe
 export class Company {
   public readonly name: string;
-  private readonly collaborator: Collaborator[] = [];
+  protected readonly collaborator: Collaborator[] = [];
   protected readonly cnpj: string;
 
   constructor(name: string, cnpj: string) {
@@ -18,7 +20,17 @@ export class Company {
   }
 }
 
-//forma reduzida de criar uma classe
+export class Udemy extends Company {
+  constructor() {
+    super('Udemy', '51561561');
+  }
+  delete(): Collaborator | null {
+    const collaborators = this.collaborator.pop();
+    if (collaborators) return collaborators;
+    return null;
+  }
+}
+
 export class Collaborator {
   constructor(
     public readonly name: string,
@@ -26,13 +38,15 @@ export class Collaborator {
   ) {}
 }
 
-const company1 = new Company('Udemy', '18515815');
+const company1 = new Udemy();
 const company2 = new Company('Facebook', '414554485');
 const newCollaborator1 = new Collaborator('Luiz', 'Miranda');
 const newCollaborator2 = new Collaborator('Beatriz', 'Silva');
-company1.addCollaborator(newCollaborator1);
 company2.addCollaborator(newCollaborator2);
 company1.showCollaborator();
-company2.showCollaborator();
-console.log(company1);
 console.log(company2);
+company1.addCollaborator(newCollaborator1);
+console.log(company1);
+const removeCollaborator = company1.delete();
+console.log(company1);
+console.log(removeCollaborator);
