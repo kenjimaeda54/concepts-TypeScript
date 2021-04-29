@@ -17,8 +17,8 @@ export class People {
   }
 }
 
-const nameCompleted = new People('Ricardo', 'Maeda', 25, '125-222-212.55');
-//aqui uso o setter
-nameCompleted.cpf = '12522221255';
-//aqui eu uso getter
+const nameCompleted = new People('Ricardo', 'Maeda', 20, '122-555-123131.255');
+//aqui utilizo o setter para formatar o cpf
+nameCompleted.cpf = '122555123131255';
+//aqui utilizo o getter
 console.log(nameCompleted.cpf);
