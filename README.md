@@ -48,3 +48,4 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 - Aplicando na pratica princpio de polimorfismo
 - Polimorfismo em  codigo é usar classes do mesmo tipo aplicando metodos de formas diferentes. 
 - Exemplo de polimorfismo. class Student extends People. class Client extendes People. Ambos são classses do mesmo tipo,porque extende de People
+- Utilizando super class,para acessar a classe principal em uma sub classe
