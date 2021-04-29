@@ -35,7 +35,10 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 
 # POO
 - Primeiras classes em Type Script
-- Construindo classes com modificadores de acesso é entendo seus principios public,private,proteced.
+- Construindo classes com modificadores de acesso é entendo seus principios public,private,protecded.
+- Public:acesso em qualquer lugar 
+- Private:acesso so dentro da classe que foi criada
+- Proecded:acesso dentro da classe que foi criada e nas sub classes
 - Aplicando conceitos de abstração,encapsulamento
 - Principio de abstração. Para o funcionamento do meu progama asbtraio de uma classe apenas oque é util.
 - Exemplo classico de abstração: Quando ser humano doa sangue,enfermeira abstraia apenas oque é util é não todos os orgãos.
