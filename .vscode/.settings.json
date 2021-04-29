@@ -1,14 +1,8 @@
 {
+    "editor.fontSize": 20,
+    "window.zoomLevel": 1,
     "code-runner.executorMap": {
-        "typescript": "npx-ts-node --files"
+        "typescript": "clear && npx ts-node --files"
     },
-
-
-    "editor.codeActionsOnSave": {
-
-        "source.fixAll.eslint": true
-
-
-
-    }
+    "liveServer.settings.port": 5501
 }
