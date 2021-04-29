@@ -1,6 +1,6 @@
 //public --- posso acessar em qualquer lugar
 //private-- - posso acesssar somente na classe que foi criado
-//proteced--- posso aacessar na classe que foi criado e sub classe
+//protecded--- posso aacessar na classe que foi criado e sub classe
 export class Company {
   public readonly name: string;
   protected readonly collaborator: Collaborator[] = [];
@@ -22,11 +22,12 @@ export class Company {
 
 export class Udemy extends Company {
   constructor() {
-    super('Udemy', '51561561');
+    super('Udemy', '5151515');
   }
+
   delete(): Collaborator | null {
-    const collaborators = this.collaborator.pop();
-    if (collaborators) return collaborators;
+    const remove = this.collaborator.pop();
+    if (remove) return remove;
     return null;
   }
 }
