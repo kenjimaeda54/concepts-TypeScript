@@ -1,3 +1,5 @@
+//usamos  construtor privado para construir Singleton-Referencia Bibliografica Gof
+//Factory Method- Referencia bibliografica Gof
 export class Database {
   private static database: Database;
 
@@ -11,6 +13,7 @@ export class Database {
     return `Localhost${this.host} User:${this.user}  Senh:${this.password}`;
   }
 
+  //Factory Methodo- Quando um metodo de um classe cria um novo objeto
   static getNewDatabase(
     host: string,
     user: string,
@@ -26,6 +29,7 @@ export class Database {
   }
 }
 
+//se o objeto fosse chamado por new (iria criar duas intancias)
 const db1 = Database.getNewDatabase('Localhost', 'root', '1261545');
 db1.getDatabse();
 console.log(db1);
