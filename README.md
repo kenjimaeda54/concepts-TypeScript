@@ -45,6 +45,8 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 - Prinicipio do encapsulamento. Eu protejo os dados sensiveis
 - Exemplo classico é o controle remoto,usuario não tem acesso aos componentes internos.
 - Usando getter e setter na classe Type Script
+- Atributos e metodos estaticos.
+- Atributos e metodos estaticos não podem ser referenciado pela palavra new so pelo proprio objeto
 
 ### Herança
 - Trabalhando com conceitos de herança,encapsulamento,abstração
