@@ -55,3 +55,9 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 - Polimorfismo em  codigo é usar classes do mesmo tipo aplicando metodos de formas diferentes. 
 - Exemplo de polimorfismo. class Student extends People. class Client extendes People. Ambos são classses do mesmo tipo,porque extende de People
 - Utilizando super class,para acessar a classe principal em uma sub classe
+
+
+### Factory Method e Singleton
+- Com base no projeto padrão de projeto do livro Gang of Four Desing Patterns. Utilizei principio de Factory Method e Singleton
+- Singleton seria garantir que não ocorra instancia de um objeto mais de uma vez
+- Factory Method e quando uma classe cria um novo objeto,assim a responsabilidade da instancia não e mais da classe pattern.
