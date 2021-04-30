@@ -1,5 +1,6 @@
 //atributos estaticos,não podem ser estancidos por new
 export class People {
+  //membro estatico
   static cpfFixed = '00000000';
   static oldFixed = 20;
 
@@ -10,20 +11,18 @@ export class People {
     private cpf: string,
   ) {}
 
-  complete(): void {
-    return console.log(
-      `Idade padrão:${People.oldFixed},Cpf padrão:${People.cpfFixed}`,
-    );
+  all(): string {
+    return `CPF padrão${People.cpfFixed}, Idade padrão${People.oldFixed} anos`;
   }
 
+  //metodo estatico
   static peoples(name: string, secondName: string): People {
     return new People(name, secondName, People.oldFixed, People.cpfFixed);
   }
 }
 
-const peoples1 = new People('Luiz', 'Miranda', 30, '122-155-2555');
-const people2 = People.peoples('Miranda', 'Ferando');
-console.log(people2);
-console.log(peoples1);
-//aqui chamei um metodo estanciado por new e retornei dois membros estaticos
-peoples1.complete();
+const peoples = new People('Luiz', 'Miranda', 25, '122-555-1121.55');
+const full = People.peoples('Miranda', 'Fernando');
+console.log(peoples);
+console.log(full);
+console.log(peoples.all());
