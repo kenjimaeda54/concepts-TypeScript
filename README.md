@@ -65,5 +65,5 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 ### Class abstract
 - Classes abastratas não podem ser instanciadas pelo new, porém podem ser estendidas,suas classes ou metodos passam a ser sub classe. Se ela possuir
 classe ou metodo abstrato,não precisa passar valores.
-- Normalmente elas são uteis quando apenas desejo herdar seus valores
+- Normalmente elas são uteis quando desejo apenas criar uma classe para ser extendida ou seja a classse patern ou principal sera apenas modelo. 
 - Usando uma pequena aplicação de personagens, ataque e defesa, para exemplificar classe abstrata
