@@ -1,26 +1,21 @@
-//usamos  construtor privado para construir Singleton-Referencia Bibliografica Gof
-//Factory Method- Referencia bibliografica Gof
+//usamos construtor privado para construir Singleton-Referencia Bibliografica Gang of Four
+//Factory Method- Referencia bibliografica Gang of Four
 export class Database {
   private static database: Database;
-
   private constructor(
     private host: string,
     private user: string,
     private password: string,
   ) {}
 
-  getDatabse(): string {
-    return `Localhost${this.host} User:${this.user}  Senh:${this.password}`;
+  conecet(): string {
+    return `Localhost${this.host} Usuario:${this.user} Senha:${this.password}`;
   }
 
   //Factory Methodo- Quando um metodo de um classe cria um novo objeto
-  static getNewDatabase(
-    host: string,
-    user: string,
-    password: string,
-  ): Database {
+  static checkDatabase(host: string, user: string, password: string): Database {
     if (Database.database) {
-      console.log('Retornando conexao instanciada');
+      console.log('Retornando instancia criada');
       return Database.database;
     }
     console.log('Criando primeira instancia');
@@ -30,15 +25,11 @@ export class Database {
 }
 
 //se o objeto fosse chamado por new (iria criar duas intancias)
-const db1 = Database.getNewDatabase('Localhost', 'root', '1261545');
-db1.getDatabse();
+const db1 = Database.checkDatabase('Localhost', 'root', '12151468');
 console.log(db1);
-const db2 = Database.getNewDatabase('Localhost', 'root', '126215');
-db2.getDatabse();
+const db2 = Database.checkDatabase('Localhost', 'root', '12151468');
 console.log(db2);
-const db3 = Database.getNewDatabase('Localhost', 'root', '126215');
-db3.getDatabse();
+const db3 = Database.checkDatabase('Localhost', 'root', '12151468');
 console.log(db3);
-const db4 = Database.getNewDatabase('Localhost', 'root', '126215');
-db4.getDatabse();
+const db4 = Database.checkDatabase('Localhost', 'root', '12151468');
 console.log(db4);
