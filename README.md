@@ -67,3 +67,7 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 classe ou metodo abstrato,não precisa passar valores.
 - Normalmente elas são uteis quando desejo apenas criar uma classe para ser extendida ou seja a classse patern ou principal sera apenas modelo. 
 - Usando uma pequena aplicação de personagens, ataque e defesa, para exemplificar classe abstrata
+
+### Associações
+- Aplicando principio de assoiação entre as classes. 
+- Associação fraca, são assoaciações entre classes para usar determinadas coisas,mas sem depender necessariamente uma da outra.
