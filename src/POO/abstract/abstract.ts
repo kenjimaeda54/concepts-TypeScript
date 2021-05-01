@@ -12,34 +12,37 @@ export abstract class Character {
   //metodos ou classes  abstrata não precisa de valores;
   abstract nameAtack(): void;
 
-  atacker(personagem: Character): void {
+  atacker(character: Character): void {
     this.nameAtack();
-    personagem.defend(this.atack);
+    return character.defend(this.atack);
   }
 
-  defend(power: number): void {
-    this.life -= power;
-    console.log(`${this.name} agora tem ${this.life} de vida....`);
+  defend(atack: number): void {
+    this.life -= atack;
+    return console.log(`${this.name} esta agora com ${this.life}`);
   }
 }
 
 export class Warrior extends Character {
-  protected emoji = `\u{1F9DD}`; //emoji Uni code
+  protected emoji = `\u{1F9DD}`;
   nameAtack(): void {
-    console.log(`${this.emoji}  Aooo ataque`);
+    console.log(`${this.emoji}  Warrior ataca`);
   }
 }
 
 export class Moster extends Character {
   protected emoji = `\u{1F9DF}`;
   nameAtack(): void {
-    console.log(`${this.emoji} Arrrrrr`);
+    console.log(`${this.emoji} Moster ataca`);
   }
 }
 
-const warrior = new Warrior('Gladiador', 1000, 520);
-const moster = new Moster('Gorilaz', 1200, 250);
+const warrior = new Warrior('Gladiador', 1200, 250);
+const moster = new Moster('Gorillaz', 1500, 350);
+
 warrior.atacker(moster);
 warrior.atacker(moster);
+warrior.atacker(moster);
+moster.atacker(warrior);
 moster.atacker(warrior);
 moster.atacker(warrior);
