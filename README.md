@@ -76,6 +76,15 @@ que extender, inclusive utitliza a palavra resevada implements.
 - Com type alias class é possivel implementar "n" contratos,classe abastrata não
 - Modificadores de acesso das classes que estão implementado type só podem ser public, não sendo possivel outro modificador
 
+### Type interface
+- Interfaces e type alias trabalham com mesmo conceitos.
+- Ambos são contratos para outras classes,porem em interface esta diretamente ligado a modelagem de objetos,ja tipos alias e generalista
+- Diferençãs são minimas, exemplo  nas uniões conforme abaixo.
+- type "tipo" = "tipos" & "tipos" 
+- inteface "tipo" extendes "outros tipo", "outro tipo"{}
+- Outro difernça e na declaração conforme exemplo abaixo
+-  type "tipo" ={}  
+-  interface "tipo" {}
 
 # POO ligações
 - Realizando ligações entres as classes
