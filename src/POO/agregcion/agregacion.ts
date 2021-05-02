@@ -18,11 +18,12 @@ export class CarrofPurchases {
   }
 }
 
-// ja que nossas variaveis são publicas posso acessar elas sem get e settter
 export class Products {
   constructor(public name: string, public price: number) {}
 }
-//ja que esta publico consigo acessar os produtos sem chamar getter e setter
+
+//nossas classes no construtor são  publicas então  consigo acessar
+//os produtos sem chamar getter e setter
 const consumer1 = new Products('car', 2500);
 const consumer2 = new Products('shirt', 150.2);
 const consumer3 = new Products('shoe', 102);
