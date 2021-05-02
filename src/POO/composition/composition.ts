@@ -1,12 +1,14 @@
-export class Carr {
+//composição são classes que estão diretamentes ligadas
+//estou inferindo pelo new a classe Motor dentro da classe Car
+export class Car {
   protected readonly motor: Motor = new Motor();
 
   on(): void {
     this.motor.on();
   }
 
-  seepUp(): void {
-    this.motor.speedUp();
+  speedUp(): void {
+    this.motor.sepeedUp();
   }
 
   stop(): void {
@@ -16,20 +18,20 @@ export class Carr {
 
 export class Motor {
   on(): void {
-    console.log('Motor esta ligando...');
+    console.log('Motor esta ligando');
   }
 
-  speedUp(): void {
-    console.log('Motor esta acelerando...');
+  sepeedUp(): void {
+    console.log('Motor esta acelerando');
   }
 
   stop(): void {
-    console.log('Esta parando');
+    console.log('Motor esta desligando');
   }
 }
 
-const user = new Carr();
+const user = new Car();
 
 user.on();
-user.seepUp();
+user.speedUp();
 user.stop();
