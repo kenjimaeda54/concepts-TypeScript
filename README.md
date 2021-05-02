@@ -85,6 +85,7 @@ que extender, inclusive utitliza a palavra resevada implements.
 - Outro difernça e na declaração conforme exemplo abaixo
 -  type "tipo" ={}  
 -  interface "tipo" {}
+-  Apliquei pequeno exemplo declaration merge em interface
 
 # POO ligações
 - Realizando ligações entres as classes
