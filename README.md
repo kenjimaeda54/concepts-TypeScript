@@ -11,6 +11,10 @@ TypeScript
 - Type Script trabalha com tipagem estrutural,algo que não ocorre normalmente em linguagens tipadas ou seja
 se você declarar uma função com as variaveis ,so por inferencia ele vai interpretar o tipo.
 
+### Types Guards
+- Procedimento usado para refinar os codigos é garantir menos possibilidades de erro.
+- Usei types alias,fucntion é switch
+
 ### Tuples
 - Caso desejo que algum array ou objeto  não ocorra a mudança de tipo,apenas valores e bastante util.
 - Para tuples ficar tipamente tipada reandoly e uma otima propriedade 
