@@ -71,3 +71,4 @@ classe ou metodo abstrato,não precisa passar valores.
 ### Associações
 - Aplicando principio de assoiação entre as classes. 
 - Associação fraca, são assoaciações entre classes para usar determinadas coisas,mas sem depender necessariamente uma da outra.
+- Aplicou inversão de dependencia,normalmente as classes apontam para classes concretas que são inferidas com new. Porém se alterar algo nas classes podem gerar conflito,então com inversão dependencia eu aponto minha classe para uma classe abstrata ou contrado.
