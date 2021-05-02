@@ -68,6 +68,14 @@ classe ou metodo abstrato,não precisa passar valores.
 - Normalmente elas são uteis quando desejo apenas criar uma classe para ser extendida ou seja a classse patern ou principal sera apenas modelo. 
 - Usando uma pequena aplicação de personagens, ataque e defesa, para exemplificar classe abstrata
 
+### Type alias for Class
+- Classe abstrata e tipo em classes tem bastante semelhanças,ambos são identificos funcionam semelhante ao contrato,as classes que extender de abstrata precisa aplicar tudo que esta exigido nas base é isto também acontece em type alias classes 
+- Em classes abstratas posso alterar os modificadores de acesso tanto na classe abastrtata quanto nas que extende delas
+,mesmo que não seja boa pratica,ambos possuirem tipos diferentes. Em type classes isto não e possivel,apenas e possivel declarar tipo nas classes
+que extender, inclusive utitliza a palavra resevada implements.
+- Com type alias class é possivel implementar "n" contratos,classe abastrata não
+- Modificadores de acesso das classes que estão implementado type só podem ser public, não sendo possivel outro modificador
+
 
 # POO ligações
 - Realizando ligações entres as classes
