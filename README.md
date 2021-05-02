@@ -38,9 +38,9 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 - Construindo classes com modificadores de acesso é entendo seus principios public,private,protecded.
 - Public:acesso em qualquer lugar 
 - Private:acesso so dentro da classe que foi criada
-- Proecded:acesso dentro da classe que foi criada e nas sub classes
+- Proetecd:acesso dentro da classe que foi criada e nas subs classes
 - Aplicando conceitos de abstração,encapsulamento
-- Principio de abstração. Para o funcionamento do meu progama asbtraio de uma classe apenas oque é util.
+- Principio de abstração. Para o funcionamento do meu software asbtraio de uma classe apenas oque é util.
 - Exemplo classico de abstração: Quando ser humano doa sangue,enfermeira abstraia apenas oque é util é não todos os orgãos.
 - Prinicipio do encapsulamento. Eu protejo os dados sensiveis
 - Exemplo classico é o controle remoto,usuario não tem acesso aos componentes internos.
@@ -68,12 +68,24 @@ classe ou metodo abstrato,não precisa passar valores.
 - Normalmente elas são uteis quando desejo apenas criar uma classe para ser extendida ou seja a classse patern ou principal sera apenas modelo. 
 - Usando uma pequena aplicação de personagens, ataque e defesa, para exemplificar classe abstrata
 
-### Associações
+
+# POO ligações
+- Realizando ligações entres as classes
+- Assoiação é a ligação mais fraca
+- Agregação é forte
+- Composição é muito forte
+
+### Associação
 - Aplicando principio de assoiação entre as classes. 
 - Associação fraca, são assoaciações entre classes para usar determinadas coisas,mas sem depender necessariamente uma da outra.
-- Aplicou inversão de dependencia,normalmente as classes apontam para classes concretas que são inferidas com new. Porém se alterar algo nas classes podem gerar conflito,então com inversão dependencia eu aponto minha classe para uma classe abstrata ou contrado.
+- Aplicou inversão de dependencia,normalmente as classes de associação apontam para classes concretas que são inferidas com new. Porém se alterar algo nas classes podem gerar conflito,então com inversão dependencia eu aponto minha classe para uma classe abstrata ou contrado.
 
 ### Agregação
 - Aplicação de agregação de classes
-- Agregação são classes que funcionam isoladamente,porém para funcionar corretamente precisam estar associadas
+- Agregação são classes que funcionam isoladamente,porém para funcionar corretamente precisam estar associadas.
 - Exemplo é o  carro e pneu,ambos podem viver isoladamente,porém para carro funcionar precisa de pneu.  
+
+### Composition
+- Aplicação de composição entre classes
+- Composição é uma ligação extremamente forte,uma classe esta diretamente dependendo de outra
+- Exemplo de composição: ser humano não vive sem coração. Carro sem motor.
