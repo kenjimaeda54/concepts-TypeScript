@@ -68,12 +68,24 @@ classe ou metodo abstrato,não precisa passar valores.
 - Normalmente elas são uteis quando desejo apenas criar uma classe para ser extendida ou seja a classse patern ou principal sera apenas modelo. 
 - Usando uma pequena aplicação de personagens, ataque e defesa, para exemplificar classe abstrata
 
-### Associações
+
+# POO ligações
+- Realizando ligações entres as classes
+- Assoiação é a ligação mais fraca
+- Agregação é forte
+- Composição é muito forte
+
+### Associação
 - Aplicando principio de assoiação entre as classes. 
 - Associação fraca, são assoaciações entre classes para usar determinadas coisas,mas sem depender necessariamente uma da outra.
-- Aplicou inversão de dependencia,normalmente as classes apontam para classes concretas que são inferidas com new. Porém se alterar algo nas classes podem gerar conflito,então com inversão dependencia eu aponto minha classe para uma classe abstrata ou contrado.
+- Aplicou inversão de dependencia,normalmente as classes de associação apontam para classes concretas que são inferidas com new. Porém se alterar algo nas classes podem gerar conflito,então com inversão dependencia eu aponto minha classe para uma classe abstrata ou contrado.
 
 ### Agregação
 - Aplicação de agregação de classes
-- Agregação são classes que funcionam isoladamente,porém para funcionar corretamente precisam estar associadas
+- Agregação são classes que funcionam isoladamente,porém para funcionar corretamente precisam estar associadas.
 - Exemplo é o  carro e pneu,ambos podem viver isoladamente,porém para carro funcionar precisa de pneu.  
+
+### Composition
+- Aplicação de composição entre classes
+- Composição é uma ligação extremamente forte,uma classe esta diretamente dependendo de outra
+- Exemplo de composição: ser humano não vive sem coração. Carro sem motor.
