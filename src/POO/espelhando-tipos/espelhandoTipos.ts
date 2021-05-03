@@ -12,10 +12,11 @@ type Car = {
 
 //se eu alterar alguma chave em type Cars,vai refletir aqui
 //ja que é espelhamento entre classes
-const userCar: Car = {
-  brand: 'Ford',
-  year: '22020',
-  name: 'Ricardo',
+
+const userCarr: Car = {
+  brand: 'Mercedes',
+  year: '210202',
+  name: 'Luiz',
 };
 
-console.table(userCar);
+console.table(userCarr);
