@@ -15,6 +15,9 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 - Modificador de acesso: Private-- apenas na classe que foi criada
 - Modificaor de acesso: Proteced-- posso acesar na classe que foi criada e subs classes
 - Usando this como retorno
+- Usar this como retorno e interessante,porque comportamento cada metodo é instancia da minha classe,assim posso
+gerar varias chamadas em cadeias. Exemplo: objeto.objeto.
+- Overload de funções. Minha função se comporta de maneira diferente de acordo com os parametros enviados
 
 ### Types Guards
 - Procedimento usado para refinar os codigos é garantir menos possibilidades de erro.
