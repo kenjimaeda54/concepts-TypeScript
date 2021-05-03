@@ -14,6 +14,7 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 - Modificador de acesso: Public--pode ser acessado por todos
 - Modificador de acesso: Private-- apenas na classe que foi criada
 - Modificaor de acesso: Proteced-- posso acesar na classe que foi criada e subs classes
+- Usando this como retorno
 
 ### Types Guards
 - Procedimento usado para refinar os codigos é garantir menos possibilidades de erro.
