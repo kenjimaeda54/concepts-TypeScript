@@ -10,6 +10,7 @@ TypeScript
 - Usando type unknown  a nosso favor
 - Type Script trabalha com tipagem estrutural,algo que não ocorre normalmente em linguagens tipadas ou seja
 se você declarar uma função com as variaveis ,so por inferencia ele vai interpretar o tipo.
+- Aplicando espelhamento entre tipos alias
 
 ### Types Guards
 - Procedimento usado para refinar os codigos é garantir menos possibilidades de erro.
