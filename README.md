@@ -37,6 +37,12 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 ### Intersection types
 - Principio parecido ao Union types,porém objetivo e similar ao and no controle de fluxo.
 
+### Keyof and TypeOf
+- Com typeof eu posso pegar o tipo de um objeto ou  valor que foi inferido,cofigurado
+- É a partir de typeof,com keyof posso pegar as chaves desse objeto 
+- Pequena aplicação para entender keyof e typeof, interessante com esse metodo meu codigo fica dinamico,tudo alterado no objeto reflete 
+no keyof e typeof 
+
 # POO
 - Primeiras classes em Type Script
 - Construindo classes com modificadores de acesso é entendo seus principios public,private,protecded.
