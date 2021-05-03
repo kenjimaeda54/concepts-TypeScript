@@ -9,11 +9,13 @@ type Key = keyof CorObj;
 const corObj = {
   vermelho: 'red',
   azul: 'blue',
-  rosa: 'pink',
+  amarelo: 'yellow',
+  laranja: 'orange',
+  preto: 'black',
 };
 
-function translate(cor: Key, cores: CorObj): string {
+export function translate(cores: CorObj, cor: Key): string {
   return cores[cor];
 }
 
-console.log(translate('azul', corObj));
+console.log(translate(corObj, 'preto'));
