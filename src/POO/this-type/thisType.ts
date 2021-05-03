@@ -1,55 +1,57 @@
-export class Calc {
+export class calc {
   constructor(protected number: number) {}
 
-  mult(n: number): this {
-    this.number *= n;
-    return this;
-  }
   sum(n: number): this {
     this.number += n;
     return this;
   }
-  subtraction(n: number): this {
+
+  sub(n: number): this {
     this.number -= n;
     return this;
   }
-  divison(n: number): this {
+
+  multi(n: number): this {
+    this.number *= n;
+    return this;
+  }
+
+  division(n: number): this {
     this.number /= n;
     return this;
   }
 }
 
-export class subCalc extends Calc {
+export class subCalc extends calc {
   sqrt(n: number): this {
     this.number **= n;
     return this;
   }
 }
 
-const cal = new Calc(10);
-cal.mult(3).divison(2).subtraction(5);
-console.log(cal);
+const match = new calc(35);
+match.multi(10).division(10).sum(10).sub(5);
+console.log(match);
 
-export class Request {
-  private method: 'get' | 'post' | null = null;
-  private url: string | null = null;
+export class request {
+  protected method: 'get' | 'post' | null = null;
+  protected url: string | null = null;
 
   //interesante entender,aqui não posso colocar string,porque string e algo mais amplo que
-  //'get','post'.
-  setMethod(parms: 'get' | 'post'): this {
-    this.method = parms;
+  //'get','post'
+  setMethod(requests: 'get' | 'post'): this {
+    this.method = requests;
     return this;
   }
-
-  //aqui posso colocar 'get' e 'post'.
-  getUrl(url: string): this {
-    this.url = url;
+  //aqui posso  colocar 'get','post',porque são mais restritos que string
+  getUrl(requests: string): this {
+    this.url = requests;
     return this;
   }
 
   send(): void {
-    console.log(`Enviado atraves metodo ${this.method}, url: ${this.url} `);
+    console.log(`Enviando pelo meotodo ${this.method} pela url:${this.url}`);
   }
 }
-const sends = new Request();
-sends.setMethod('get').getUrl('http://parabems.google.com').send();
+const requests = new request();
+requests.setMethod('get').getUrl('http://google.com').send();
