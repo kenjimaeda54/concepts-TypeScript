@@ -131,4 +131,6 @@ que extender, inclusive utitliza a palavra resevada implements.
 - Aplicando meu filter personalizado com generic,para retornar valores filtrados em um array
 - Promise e arrays são tipos genericos do java script
 - Realizando exemplo de types e inerface generic
+- Constraints--> Se desejo restringir  função é o tipo Generic, uilizamos o principio constraints,com a palavra reservada extends, é caso queria 
+tambem chave do objeto , extends keyof
 
