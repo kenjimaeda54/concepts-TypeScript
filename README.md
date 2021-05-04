@@ -125,3 +125,9 @@ que extender, inclusive utitliza a palavra resevada implements.
 - Aplicação de composição entre classes
 - Composição é uma ligação extremamente forte,uma classe esta diretamente dependendo de outra
 - Exemplo de composição: ser humano não vive sem coração. Carro sem motor.
+
+# Types Generic
+- Types generic são ideias quando não sabe o tipo da variavel,exemplo banco de dados,api...
+- Aplicando meu filter personalizado com generic,para retornar valores filtrados em um array
+
+
