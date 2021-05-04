@@ -129,5 +129,5 @@ que extender, inclusive utitliza a palavra resevada implements.
 # Types Generic
 - Types generic são ideias quando não sabe o tipo da variavel,exemplo banco de dados,api...
 - Aplicando meu filter personalizado com generic,para retornar valores filtrados em um array
-
+- Promise e arrays são tipos genericos do java script
 
