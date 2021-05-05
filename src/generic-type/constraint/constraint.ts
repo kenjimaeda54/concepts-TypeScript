@@ -1,16 +1,19 @@
 //constraints -->> toda vez que desejo restringir  uma função é seu genérico
 //utilizo o extends
-type Objetes = <O, K extends keyof O>(obj: O, index: K) => O[K];
+type Objects = <K, O extends keyof K>(obj: K, index: O) => K[O];
 
-export const getKey: Objetes = (key, value) => key[value];
+const getKey: Objects = (obj, index) => obj[index];
 
 const animal = {
-  cor: 'Marrom',
-  vacinas: ['vacina 1', 'vacina 2'],
-  idade: 10,
+  color: 'Marrom',
+  vacine: ['vacina1', 'vacina2'],
+  old: 10,
 };
 
-const key = getKey(animal, 'vacinas');
-const keyCor = getKey(animal, 'cor');
-console.log(key[1], keyCor, getKey(animal, 'idade'));
-console.log(key);
+const colors = getKey(animal, 'color');
+const vacines = getKey(animal, 'vacine');
+console.log(
+  ` Minha cor é ${colors},\n Eu tomei a  ${
+    vacines[0]
+  }, \nMinha idade é  ${getKey(animal, 'old')} anos`,
+);
