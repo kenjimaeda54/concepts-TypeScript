@@ -138,3 +138,4 @@ tambem chave do objeto , extends keyof
 - Gerenic intersection, mesmo principio de type intersection,porém com genericos. Recorda que intersection é união, se houver dois objetos com mesa 
 variavel na chave,uma vai sobescrever a outra
 - Predicados, seria types anotation avançado,quando uma função retorna true,se você inferir que o retorno da função vai ser o argumento com um tipo declarado, este argumento passa a possuir o tipo. Exemplo  function(value) value is number// se retornar true argumento value sera numero
+- Existem genericos padrões do type script são conhecidos como utillity types,apliquei alguns deles
