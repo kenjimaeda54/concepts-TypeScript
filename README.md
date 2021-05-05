@@ -133,6 +133,8 @@ que extender, inclusive utitliza a palavra resevada implements.
 - Realizando exemplo de types e inerface generic
 - Constraints--> Se desejo restringir  função é o tipo Generic, uilizamos o principio constraints,com a palavra reservada extends, é caso queria 
 tambem chave do objeto , extends keyof
-- Generic nas classes,pode ocorrer nas classes ou metodos criados não aparecer a inferencia do tipo,então cabe a você inferir
+- Generic nas classes,pode ocorrer nas classes ou metodos criados não aparecer a inferencia do tipo,então cabe a você inferir.
 - Criei uma pequena classe simulando os metodos  push(),pop() e length, em um array, para demostrar Generic Type
+- Gerenic intersection, mesmo principio de type intersection,porém com genericos. Recorda que intersection é união, se houver dois objetos com mesa 
+variavel na chave,uma vai sobescrever a outra
 - Predicados, seria types anotation avançado,quando uma função retorna true,se você inferir que o retorno da função vai ser o argumento com um tipo declarado, este argumento passa a possuir o tipo. Exemplo  function(value) value is number// se retornar true argumento value sera numero
