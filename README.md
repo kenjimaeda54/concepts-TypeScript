@@ -135,4 +135,4 @@ que extender, inclusive utitliza a palavra resevada implements.
 tambem chave do objeto , extends keyof
 - Generic nas classes,pode ocorrer nas classes ou metodos criados não aparecer a inferencia do tipo,então cabe a você inferir
 - Criei uma pequena classe simulando os metodos  push(),pop() e length, em um array, para demostrar Generic Type
-
+- Predicados, seria types anotation avançado,quando uma função retorna true,se você inferir que o retorno da função vai ser o argumento com um tipo declarado, este argumento passa a possuir o tipo. Exemplo  function(value) value is number// se retornar true argumento value sera numero
