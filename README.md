@@ -140,14 +140,6 @@ variavel na chave,uma vai sobescrever a outra
 - Predicados, seria types anotation avançado,quando uma função retorna true,se você inferir que o retorno da função vai ser o argumento com um tipo declarado, este argumento passa a possuir o tipo. Exemplo  function(value) value is number// se retornar true argumento value sera numero
 - Existem genericos padrões do type script são conhecidos como utillity types,apliquei alguns deles
 
-# S.O.L.I.D
-- Single Responsibility Principle
-- Open/closed principle
-- Liskov subtitution principle
-- Interface segregration principle
-- Dependency inversion principle
-- Exemplos de refaturação usando os princpios SOLID
-- Primeiramente inicei uma classe de carrinhos de compras,sem nenhuma refaturação,usando conceitos de converter string,abstração,getter e setter
 
 
 
