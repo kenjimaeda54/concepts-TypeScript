@@ -2,72 +2,85 @@ type Cart = {
   name: string;
   price: number;
 };
-type Status = 'open' | 'closed';
 
-export class shoopingCart {
-  private readonly _itens: Cart[] = [];
-  private _orderStatus: Status = 'open';
+type OrderStatus = 'open' | 'closed';
 
-  addIten(item: Cart): void {
-    this._itens.push(item);
+export class shoppingCart {
+  private readonly _cartItens: Cart[] = [];
+  private _orderStatus: OrderStatus = 'open';
+
+  addItens(item: Cart): void {
+    this._cartItens.push(item);
   }
 
-  //precisa passar no metodo splice quantidade de itens que deseja excluir a partir do index
-  removeItem(index: number): void {
-    const remove = this._itens.splice(index, 1);
-    const listTotal = remove.map((item) => item.name);
-    return console.log(`Removido o item ${listTotal} , removido com sucesso`);
+  //método splice necessita de dois parâmetros  para funcionar corretamente,primeiro o índice
+  // é  segundo é   total que deseja excluir
+  removeItens(index: number): void {
+    const remove = this._cartItens.splice(index, 1);
+    const itensRemove = remove.map((item) => item.name);
+    return console.log(` Item ${itensRemove} removido com sucesso `);
   }
 
-  get itens(): Readonly<Cart[]> {
-    return this._itens;
+  get carIten(): Readonly<Cart[]> {
+    return this._cartItens;
   }
 
-  get orderStatus(): Status {
+  get orderStatus(): OrderStatus {
     return this._orderStatus;
   }
-  // to Fixed retorna string  ,por esse motivo foi colocado o +
-  //assim retorna number
+
+  //toFixed retorna uma string,para return number,solução simples foi colocar o sinal de +
   valueTotal(): number {
-    return +this._itens
+    return +this._cartItens
       .reduce((acc, item) => (acc += item.price), 0)
       .toFixed(2);
   }
 
-  checkout() {
-    if (this.isInputy()) {
-      return console.log('Seu carrinho esta vazio');
+  isInput(): boolean {
+    return this._cartItens.length === 0;
+  }
+
+  checkOut(): void {
+    if (this.isInput()) {
+      console.log('Seu carrinho esta vazio adiciona algo por favor');
+      return;
     }
 
     this._orderStatus = 'closed';
-    this.sendMensage('Seu pedido foi realizado com sucesso');
-    this.saveOder();
+    this.sendMensage('Pedido realizado com sucesso');
+    this.saveOrder();
     this.clear();
   }
 
-  isInputy(): boolean {
-    return this._itens.length === 0;
-  }
-
   sendMensage(msg: string): void {
-    console.log('Mensagem enviado\n', msg);
+    return console.log('Salvo com sucesso\n', msg);
   }
 
-  saveOder(): void {
-    return console.log('Pedido salvo com sucesso');
+  saveOrder(): void {
+    return console.log('Pedido concluido');
   }
 
   clear(): number {
-    console.log('Limpando o carrinho');
-    return (this._itens.length = 0);
+    console.log('Carrinho limpo');
+    return (this._cartItens.length = 0);
   }
 }
 
-const list = new shoopingCart();
-list.addIten({ name: 'lápis', price: 1.68 });
-list.addIten({ name: 'caderno', price: 10.68 });
-list.addIten({ name: 'roupa', price: 105.11 });
-list.removeItem(1);
-console.log(`Valor total da lista ${list.valueTotal()}`);
-list.checkout();
-console.log(list.orderStatus);
+const shoppinList = new shoppingCart();
+shoppinList.checkOut();
+shoppinList.addItens({ name: 'Lapis', price: 1.88 });
+shoppinList.addItens({ name: 'Roupa', price: 55.6 });
+shoppinList.addItens({ name: 'Sapato', price: 88.88 });
+console.log(shoppinList.carIten);
+console.log(
+  `Seu carrinho esta com preço total de  R$ ${shoppinList.valueTotal()}`,
+);
+shoppinList.removeItens(2);
+console.log(
+  `Seu carrinho esta com preço total de  R$ ${shoppinList.valueTotal()}`,
+);
+shoppinList.checkOut();
+console.log(shoppinList.orderStatus);
+console.log(
+  `Seu carrinho esta com preço total de  R$ ${shoppinList.valueTotal()}`,
+);
