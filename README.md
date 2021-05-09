@@ -147,6 +147,7 @@ variavel na chave,uma vai sobescrever a outra
 - Interface segregration principle
 - Dependency inversion principle
 - Exemplos de refaturação usando os princpios SOLID
+- Primeiramente inicei uma classe de carrinhos de compras,sem nenhuma refaturação,usando conceitos de converter string,abstração,getter e setter
 
 
 
