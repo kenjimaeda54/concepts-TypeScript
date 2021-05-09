@@ -1,8 +1,9 @@
 {
     "editor.fontSize": 20,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 1.2,
     "code-runner.executorMap": {
         "typescript": "clear && npx ts-node --files"
     },
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "editor.fontFamily": "Ubuntu Mono, monospace",
 }
