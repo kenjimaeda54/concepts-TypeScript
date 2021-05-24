@@ -1,7 +1,8 @@
 # Conceitos-TypeScript
 TypeScript
 # Conceitos de TypeScript
-# Types annotations
+
+## Types annotations
 - Tipando variaveis primitivas
 - Aprofundando nas tipagnes de arrays,objetos e funções
 - Usando propriedades readonly(não permite alterações)
@@ -19,33 +20,33 @@ se você declarar uma função com as variaveis ,so por inferencia ele vai inter
 gerar varias chamadas em cadeias. Exemplo: objeto.objeto.
 - Overload de funções. Minha função se comporta de maneira diferente de acordo com os parametros enviados
 
-### Types Guards
+## Types Guards
 - Procedimento usado para refinar os codigos é garantir menos possibilidades de erro.
 - Usei types alias,fucntion é switch
 
-### Tuples
+## Tuples
 - Caso desejo que algum array ou objeto  não ocorra a mudança de tipo,apenas valores e bastante util.
 - Para tuples ficar tipamente tipada reandoly e uma otima propriedade 
 
-### Enum
+## Enum
 - Entendo o funcionamento do enum para TypeScript e apliquei alguns conceitos.
 - Trabalha com ideia de objetos , usando conceito diferente do tradicional o java script
 
-### Tipos literais
+## Tipos literais
 - Entendo o conceito do tipos literal em Typescript
 - Aplicando tecnicas de inserção,para determinar um tipo especifico a uma variavel
 
-### Union types
+## Union types
 - Aplicando conceitos de union types é fazer verificaçã da maneira correta
 
-### Tipos Alias
+## Tipos Alias
 - Conceito do tipo alias,muito importante para manutenção e enxergar nosso codigo
 - Crio minhas proprias variaves
 
-### Intersection types
+## Intersection types
 - Principio parecido ao Union types,porém objetivo e similar ao and no controle de fluxo.
 
-### Keyof and TypeOf
+## Keyof and TypeOf
 - Com typeof eu posso pegar o tipo de um objeto ou  valor que foi inferido,cofigurado
 - É a partir de typeof,com keyof posso pegar as chaves desse objeto 
 - Pequena aplicação para entender keyof e typeof, interessante com esse metodo meu codigo fica dinamico,tudo alterado no objeto reflete 
@@ -66,7 +67,7 @@ no keyof e typeof
 - Atributos e metodos estaticos.
 - Atributos e metodos estaticos não podem ser referenciado pela palavra new so pelo proprio objeto
 
-### Herança
+## Herança
 - Trabalhando com conceitos de herança,encapsulamento,abstração
 - Apliquei herança herdada de classe
 - Aplicando na pratica princpio de polimorfismo
@@ -75,18 +76,18 @@ no keyof e typeof
 - Utilizando super class,para acessar a classe principal em uma sub classe
 
 
-### Factory Method e Singleton
+## Factory Method e Singleton
 - Com base no projeto padrão de projeto do livro Gang of Four Desing Patterns. Utilizei principio de Factory Method e Singleton
 - Singleton seria garantir que não ocorra instancia de um objeto mais de uma vez
 - Factory Method e quando uma classe cria um novo objeto,assim a responsabilidade da instancia não e mais da classe pattern.
 
-### Class abstract
+## Class abstract
 - Classes abastratas não podem ser instanciadas pelo new, porém podem ser estendidas,suas classes ou metodos passam a ser sub classe. Se ela possuir
 classe ou metodo abstrato,não precisa passar valores.
 - Normalmente elas são uteis quando desejo apenas criar uma classe para ser extendida ou seja a classse patern ou principal sera apenas modelo. 
 - Usando uma pequena aplicação de personagens, ataque e defesa, para exemplificar classe abstrata
 
-### Type alias for Class
+## Type alias for Class
 - Classe abstrata e tipo em classes tem bastante semelhanças,ambos são identificos funcionam semelhante ao contrato,as classes que extender de abstrata precisa aplicar tudo que esta exigido nas base é isto também acontece em type alias classes 
 - Em classes abstratas posso alterar os modificadores de acesso tanto na classe abastrtata quanto nas que extende delas
 ,mesmo que não seja boa pratica,ambos possuirem tipos diferentes. Em type classes isto não e possivel,apenas e possivel declarar tipo nas classes
@@ -94,7 +95,7 @@ que extender, inclusive utitliza a palavra resevada implements.
 - Com type alias class é possivel implementar "n" contratos,classe abastrata não
 - Modificadores de acesso das classes que estão implementado type só podem ser public, não sendo possivel outro modificador
 
-### Type interface
+## Type interface
 - Interfaces e type alias trabalham com mesmo conceitos.
 - Ambos são contratos para outras classes,porem em interface esta diretamente ligado a modelagem de objetos,ja tipos alias e generalista
 - Diferençãs são minimas, exemplo  nas uniões conforme abaixo.
@@ -111,17 +112,17 @@ que extender, inclusive utitliza a palavra resevada implements.
 - Agregação é forte
 - Composição é muito forte
 
-### Associação
+## Associação
 - Aplicando principio de assoiação entre as classes. 
 - Associação fraca, são assoaciações entre classes para usar determinadas coisas,mas sem depender necessariamente uma da outra.
 - Aplicou inversão de dependencia,normalmente as classes de associação apontam para classes concretas que são inferidas com new. Porém se alterar algo nas classes podem gerar conflito,então com inversão dependencia eu aponto minha classe para uma classe abstrata ou contrado.
 
-### Agregação
+## Agregação
 - Aplicação de agregação de classes
 - Agregação são classes que funcionam isoladamente,porém para funcionar corretamente precisam estar associadas.
 - Exemplo é o  carro e pneu,ambos podem viver isoladamente,porém para carro funcionar precisa de pneu.  
 
-### Composition
+## Composition
 - Aplicação de composição entre classes
 - Composição é uma ligação extremamente forte,uma classe esta diretamente dependendo de outra
 - Exemplo de composição: ser humano não vive sem coração. Carro sem motor.
