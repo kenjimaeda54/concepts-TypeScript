@@ -25,8 +25,8 @@ gerar varias chamadas em cadeias. Exemplo: objeto.objeto.
 - Usei types alias,fucntion é switch
 
 ## Tuples
-- Caso desejo que algum array ou objeto  não ocorra a mudança de tipo,apenas valores e bastante util.
-- Para tuples ficar tipamente tipada reandoly e uma otima propriedade 
+- Tuplas são parecidos com array, mas permitem tipos de dados diferentes.
+
 
 ## Enum
 - Entendo o funcionamento do enum para TypeScript e apliquei alguns conceitos.
